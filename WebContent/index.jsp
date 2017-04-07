@@ -44,7 +44,7 @@ function onResetClick() {
 <div class="container">
    <div class="row" >
       <div class="col-xs-12 col-sm-6" >
-					<h4 class="text-left text-success">哈哈哈哈哈哈</h4>
+					<h4 class="text-left text-success">哈</h4>
       </div>
       <div class="col-xs-12 col-sm-6" >
       <form class="form" id="loginForm" action=""
