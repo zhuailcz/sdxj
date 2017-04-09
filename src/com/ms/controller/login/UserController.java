@@ -46,7 +46,7 @@ public class UserController {
 			mv.setViewName("main");
 		}else{
 			mv.addObject("message", "登录名或密码错误！请重新输入");
-			mv.setViewName("loginForm");
+			mv.setViewName("index");
 		}
 		return mv;
 	}
@@ -60,10 +60,10 @@ public class UserController {
 			HttpServletRequest request, HttpServletResponse response) throws IOException{
 		HttpSession session=request.getSession(false);  
 		if(session==null){  
-			mv.setViewName("loginForm"); 
+			mv.setViewName("index"); 
 		}  
 		session.removeAttribute("user");  
-		mv.setViewName("loginForm"); 
+		mv.setViewName("index"); 
 		return mv;
 	}
 	/**
